@@ -1,0 +1,327 @@
+/*--------------------------
+    Body -> Start
+--------------------------*/
+html, body{
+    height: 100%;
+    font-family: 'Lora', serif;
+}
+
+.fill{
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+}
+/*--------------------------
+    Body -> End
+--------------------------*/
+
+/*--------------------------
+    Navigation -> Start
+--------------------------*/
+.navi{
+    color: black;
+}
+
+.navi a{
+    color: black;
+    font-size: 20px;
+    font-family: 'Lora', serif;
+}
+
+.nvBtn{
+    background-color: black;
+}
+
+.nav-dropdown {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  }
+/*--------------------------
+    Navigation -> End
+--------------------------*/
+
+/*--------------------------
+    Main Head -> Start
+--------------------------*/
+#head{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    background: url("https://miro.medium.com/max/10708/1*Oq92ZIGTAVHPVtqq_LpGjw.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    color: azure;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+}
+
+#headContent{
+    padding: 9.5%;
+}
+
+#logo{
+    width: 100px;
+}
+
+.uniq{
+    color:#db161f;
+    font-size: 70px;
+}
+
+.lowuniq{
+    color:#db161f;
+    font-size: 70px;
+}
+
+.low{
+    font-size:40px;
+}
+/*--------------------------
+    Main Head -> End
+--------------------------*/
+
+/*--------------------------
+    Slider -> Start
+--------------------------*/
+.slide{
+    height:500px;
+    width:100%;
+}
+
+.carousel-inner{
+    border-radius: 15px;
+}
+
+/*
+img{
+    height:50%;
+}*/
+/*--------------------------
+    Slider -> End
+--------------------------*/
+
+/*--index.html -> Testimonial--*/
+.testimonial{box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);}
+
+
+/*--------------------------
+    Contact -> start
+--------------------------*/
+.con1{
+    font-size:15px;
+    background: #767d86;
+    color:white;
+}
+  
+.con2{
+    font-size:20px;
+    background: #767d86;
+    color:white;
+}
+  
+.mail{
+    font-size:16px;
+    color:blue;
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:20%;
+    position:relative;
+    
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.foot{
+    background-color: #4c5157;
+    color:white;
+}
+
+.btnCon{
+    background-color: #4c5157;
+    color: white;
+}
+
+.btnCon:hover{
+    background-color: #db161f;
+    color: black;
+}
+/*--------------------------
+    Contact -> End
+--------------------------*/
+
+
+/*--------------------------
+    About.html -> Start
+--------------------------*/
+.aboutContent{
+    background-color: #767d86;
+    color:white;
+}
+/*--------------------------
+    About.html -> End
+--------------------------*/
+
+
+/*--------------------------
+    Service.html -> Start
+--------------------------*/
+.serviceContent{
+    background-color: #767d86;
+    color:white;
+}
+
+.stitle{
+    color:#db161f;
+}
+/*--------------------------
+    Service.html -> End
+--------------------------*/
+
+
+/*--------------------------
+    News.html -> Start
+--------------------------*/
+.newsContent{
+    background-color: #767d86;
+    color:white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.trans{transition: all 1s ease;}
+
+.top{
+	display: flex;
+	width: 100%;
+	height: 80vh;
+}
+
+.top ul{
+	list-style: none;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	box-sizing: border-box;
+}
+
+.top ul li{
+	position: relative;
+	float: left;
+	width: 25%;
+	height: 25%;
+	overflow: hidden;
+}
+
+.top ul li::before{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	content: '';
+	color: white;
+	opacity: 0.4;
+	text-align: center;
+	box-sizing: border-box;
+	pointer-events: none;
+	transition: all 0.5s ease;
+}
+
+.top ul li:hover::before{
+	opacity: 0;
+	background-color: rgba(0,0,0,0.90);
+}
+
+.top ul li img{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.lightbox{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,0.75);
+	z-index: 999;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.lightbox img{
+	max-width: 90%;
+	max-height: 80%;
+	position: relative;
+	top: -100%;
+	/* Transition */
+	transition: all 1s ease;
+}
+
+.lightbox:target{
+	outline: none;
+	top: 0;
+	opacity: 1;
+	pointer-events: auto;
+	transition: all 1.2s ease;
+}
+
+.lightbox:target img{
+	top: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+/*--------------------------
+    News.html -> End
+--------------------------*/
+
+
+/*--------------------------
+    Form area -> Start
+--------------------------*/
+.sideimg{
+    background-image: url("https://images.unsplash.com/photo-1616702450885-dd2cca71b6b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYxODk5NDM4Nw&ixlib=rb-1.2.1&q=80&w=400");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.btnCu{
+    background-color: #767d86;
+    color: white;
+}
+
+.nav_f{
+    color: white;
+}
+
+.btnCu:hover{
+    background-color: #db161f;
+    color: black;
+}
+
+.nav_f:hover{
+    text-decoration: none;
+    color: black;
+}
+
+/*------join_us.html only------*/
+.down:hover{
+    text-decoration: none;
+}
+/*--------------------------
+    Form area -> End
+--------------------------*/
